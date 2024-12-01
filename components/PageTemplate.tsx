@@ -2,7 +2,7 @@ import React, { useEffect, ReactNode } from 'react';
 import { fetchData } from '../util/util';
 
 const PageTemplate = ({ title, content, loading, setLoading, showLogoutLink = false }:
-    { title: string, content: ReactNode, loading: boolean, setLoading: Function, showLogoutLink?: boolean }) => {
+    { title: string, content: ReactNode, loading: boolean, setLoading: (loading: boolean) => void, showLogoutLink?: boolean }) => {
 
     useEffect(() => {
         fetchData('200', setLoading);
