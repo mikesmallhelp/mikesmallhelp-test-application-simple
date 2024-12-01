@@ -27,7 +27,7 @@ const IndexComponent = () => {
     await fetchData('200', setLoading);
 
     if (buttonClickCount === 1 && textEmail && textBirthDate && checkbox) {
-      setMessage('Have a nice day!');
+      setMessage('Thanks for the information!');
     }
   }
 
